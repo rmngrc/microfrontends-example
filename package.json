@@ -1,0 +1,17 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.0",
+  "private": "true",
+  "workspaces": [
+    "host",
+    "navbar"
+  ],
+  "scripts": {
+    "dev:host": "npm run dev --workspace host",
+    "dev:navbar": "npm run dev --workspace navbar",
+    "dev": "npm-run-all --parallel dev:*"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
